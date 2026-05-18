@@ -424,7 +424,7 @@ export default function App() {
       </section>
 
       {/* Activity Section */}
-      <section className="bg-white py-10 md:py-14 overflow-hidden" id="주요활동">
+      <section className="bg-[#f5f2e9] py-10 md:py-14 overflow-hidden" id="주요활동">
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <div className="text-center">
             <h2 className="font-serif text-primary text-[32px] md:text-[40px]">주요 활동</h2>
@@ -492,7 +492,7 @@ export default function App() {
             className="flex gap-8 px-4"
             animate={{ x: ["0%", "-100%"] }}
             transition={{
-              duration: 100, // Very slow speed
+              duration: 250, // Even slower speed
               ease: "linear",
               repeat: Infinity,
             }}
@@ -733,8 +733,19 @@ export default function App() {
             <p className="font-sans text-stone-700 mt-2 text-base md:text-lg font-medium">울산국학원에서 운영하는 다양한 교육 프로그램을 소개합니다.</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
+        <div className="w-full overflow-hidden py-10 relative">
+          
+          <motion.div 
+            className="flex gap-8 px-4"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              duration: 80, // Slow speed
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            style={{ width: "fit-content" }}
+          >
+            {[...[
               {
                 icon: BookOpen,
                 title: "2026년 울산경찰서 사랑의 교실",
@@ -770,15 +781,46 @@ export default function App() {
                 image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjU2/MDAxNzc5MDAyMzEzOTIz.kQ-wfTQ4H9gUwLAY2KFe_rcuAFWmN0B_J_ShseahtOEg.uGJKyz0KbBzqhNpjq-YWjTNhEsnalFridy3IOtnXqKMg.PNG/Capture_2026_0517_161351.png?type=w3840",
                 objectFit: "contain" as const
               }
-            ].map((program: { icon: any, title: string, info: string, image: string, objectFit?: "contain" | "cover" }, i) => (
-              <motion.div 
+            ], ...[
+              {
+                icon: BookOpen,
+                title: "2026년 울산경찰서 사랑의 교실",
+                info: "일정: 매월 1회 또는 2회 | 장소: 울산국학원 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjcy/MDAxNzc4ODU3NzU0MTY1.Se5OKDCAueoqd208KkBjyAlnIedw1pPRdBnMiionxXYg.RbItIlm5D60xdkFM5VN9hw0Qe4KhiisGKg2HzvndNNcg.JPEG/%EC%82%AC%EB%9E%91%EC%9D%98%EA%B5%90%EC%8B%A4.jpg?type=w773",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Wind,
+                title: "국학회원을 위한 국학힐링명상 체험반",
+                info: "일정: 매주 수요일 오전 10시 | 장소: 온라인 또는 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTVfMjkz/MDAxNzc4ODUzMzE4NzMw.rpfDFntAXq3a_yMnonmqPqTesX9ET1NNJ0cmWfljYXYg.tcABA0cTRPlfhGmbEnU1fJ1PQF2Ayi8QkS7dghBIIL8g.JPEG/Gemini_Generated_Image_hqtx3shqtx3shqtx1.jpg?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Briefcase,
+                title: "민족혼 및 뿌리 정신 교육",
+                info: "일정: 수시 운영 | 장소: 협약 기업 및 단체",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfNjEg/MDAxNzc5MDAxMDYwOTY1.2ltbHCD9vMZACqm0kgybxUzN0JP49h_re_QMPeWBAKwg.EwGUR9B-CL_goV_N25ZLz8OL5I5iQ6EcXRc1bFuCCCwg.PNG/KakaoTalk_20260506_101350971.png?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Heart,
+                title: "역사문화와 K스피릿 강좌",
+                info: "일정: 수시 운영 | 장소: 단체 및 기업, 울산국학원",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjA0/MDAxNzc4OTk5ODM1MTY1.7egSk3R_dyWlfx1ZmPNCG1gywM-ZTYm_3Wve4OALv74g.cga6Kjus6k5NTdvj0SQbViYJP4u48Vau3F2t5mNVdXIg.PNG/ChatGPT_Image_2026%EB%85%84_5%EC%9B%94_17%EC%9D%BC_%EC%98%A4%ED%9B%84_03_36_03.png?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: GraduationCap,
+                title: "청소년 인성교육 및 K리더스캠프",
+                info: "일정: 수시 운영 | 장소: 울산 관내 학교 및 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjU2/MDAxNzc5MDAyMzEzOTIz.kQ-wfTQ4H9gUwLAY2KFe_rcuAFWmN0B_J_ShseahtOEg.uGJKyz0KbBzqhNpjq-YWjTNhEsnalFridy3IOtnXqKMg.PNG/Capture_2026_0517_161351.png?type=w3840",
+                objectFit: "contain" as const
+              }
+            ]].map((program, i) => (
+              <div 
                 key={i}
-                className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-stone-100"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                whileHover={{ y: -10 }}
+                className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-stone-100 w-[320px] shrink-0"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-stone-50">
                   <img 
@@ -792,16 +834,17 @@ export default function App() {
                   </div>
                 </div>
                 <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="font-serif text-lg text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold">{program.title}</h3>
+                  <h3 className="font-serif text-base text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold truncate">{program.title}</h3>
                   <div className="mt-auto pt-4 border-t border-stone-100">
-                    <p className="font-sans text-stone-800 text-xs md:text-sm leading-relaxed whitespace-pre-line font-medium">
+                    <p className="font-sans text-stone-800 text-xs leading-relaxed whitespace-pre-line font-medium line-clamp-2">
                       {program.info.split(' | ').join('\n')}
                     </p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
+        </div>
         </div>
       </section>
 
@@ -864,7 +907,7 @@ export default function App() {
       </section>
 
       {/* Sponsor Section */}
-      <section className="py-10 md:py-14 bg-white" id="후원">
+      <section className="py-10 md:py-14 bg-[#f5f2e9]" id="후원">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
             <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px]">후원감사카드</h2>
@@ -872,14 +915,14 @@ export default function App() {
           </div>
           
           <div className="w-full overflow-hidden py-10 relative">
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-[#f5f2e9] to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-[#f5f2e9] to-transparent z-10"></div>
             
             <motion.div 
               className="flex gap-12 px-4"
               animate={{ x: ["0%", "-50%"] }}
               transition={{
-                duration: 120, // Very slow speed
+                duration: 250, // Very slow speed
                 ease: "linear",
                 repeat: Infinity,
               }}
@@ -899,7 +942,7 @@ export default function App() {
                 { name: "11주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTA0/MDAxNzc3ODYxMDAxNzY5.hsgS6_rXvLJmAhw6lnkSZRa_o9QuYMTssxnoKD8jMkYg.TuoP839LhM1jQgNvOeHdCUcA9dxqez6GoIQq61dID08g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-11%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279375707" },
                 { name: "12주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjUw/MDAxNzc3ODYxMDAzNjY2.D5Xk87wZGP2N8VLFaRUFb12ngiBuUK8WOCtn9BZgynsg.eJua2Qiqa3gKNS4RInFMXx__3TzVq06xxvG_wOss_5Ug.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-12%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279377360" },
                 { name: "13주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTk0/MDAxNzc3ODYxMDAzNTQ5.mq8cTj4p28oDEnwS9Z5dhkRZ1PcFhnX-W2DsW2Xu1f0g.J_CbyrYlOhTIH5SNw1PVsszVmimC2Fa7x0LyoZvV-lYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-13%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279378139" },
-                { name: "14주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTAg/MDAxNzc3ODYxMDAxNjY2.-0un4CO9hXqcirAS06prHLWGu7nl6x0mh5uzUs-FKwcg.RCePHDoSOPLTOmlsHjRzSFtEuBUmuHatEjMkO_T5-sIg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-14%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379158" },
+                { name: "14주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMTQy/MDAxNzc4MjQ3NDU3Njc5.nZ5Yg7qTT5_Se1AjalGwJGksYsXjzc-3lUoZhttuTIkg.ffKawDio7W2Y06NL5vaAfSDJjJw6GdVNrwgrLb5Q4acg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-14%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379158" },
                 { name: "15주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfOCAg/MDAxNzc3ODYxMDAxNzQ2.7TBTH8OM76icQIW6gpfqVNFxJC2tEcpQDP_1NNMU6_Ig.AuIVeC9PjKQ8a68WHIZCRcjtX16TZ9dluyNtOsuKBrwg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-15%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379913" },
                 { name: "16주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfNTIg/MDAxNzc3ODYxMDA0OTg1.hzWDo2pxQnC1uno1iSxppUSWfGsOvKHMohfzjav_M_cg.CBluwssKpX8UTY9dtOJbDtKI7makUj5lpzpliQVJuRgg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-16%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279380833" },
                 { name: "17주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfNzkg/MDAxNzc3ODYxMDA0ODM5.AR9-VOZIM_kRnRNKU8S6jmFvumiIo3oOBj_-Rt8JotAg.NnKFXATt2U8t3LYtG8M00e4He4wTgvnOFKC3e7psuhAg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-17%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279381532" },
@@ -921,7 +964,7 @@ export default function App() {
                 { name: "11주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTA0/MDAxNzc3ODYxMDAxNzY5.hsgS6_rXvLJmAhw6lnkSZRa_o9QuYMTssxnoKD8jMkYg.TuoP839LhM1jQgNvOeHdCUcA9dxqez6GoIQq61dID08g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-11%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279375707" },
                 { name: "12주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjUw/MDAxNzc3ODYxMDAzNjY2.D5Xk87wZGP2N8VLFaRUFb12ngiBuUK8WOCtn9BZgynsg.eJua2Qiqa3gKNS4RInFMXx__3TzVq06xxvG_wOss_5Ug.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-12%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279377360" },
                 { name: "13주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTk0/MDAxNzc3ODYxMDAzNTQ5.mq8cTj4p28oDEnwS9Z5dhkRZ1PcFhnX-W2DsW2Xu1f0g.J_CbyrYlOhTIH5SNw1PVsszVmimC2Fa7x0LyoZvV-lYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-13%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279378139" },
-                { name: "14주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTAg/MDAxNzc3ODYxMDAxNjY2.-0un4CO9hXqcirAS06prHLWGu7nl6x0mh5uzUs-FKwcg.RCePHDoSOPLTOmlsHjRzSFtEuBUmuHatEjMkO_T5-sIg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-14%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379158" },
+                { name: "14주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMTQy/MDAxNzc4MjQ3NDU3Njc5.nZ5Yg7qTT5_Se1AjalGwJGksYsXjzc-3lUoZhttuTIkg.ffKawDio7W2Y06NL5vaAfSDJjJw6GdVNrwgrLb5Q4acg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-14%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379158" },
                 { name: "15주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfOCAg/MDAxNzc3ODYxMDAxNzQ2.7TBTH8OM76icQIW6gpfqVNFxJC2tEcpQDP_1NNMU6_Ig.AuIVeC9PjKQ8a68WHIZCRcjtX16TZ9dluyNtOsuKBrwg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-15%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279379913" },
                 { name: "16주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfNTIg/MDAxNzc3ODYxMDA0OTg1.hzWDo2pxQnC1uno1iSxppUSWfGsOvKHMohfzjav_M_cg.CBluwssKpX8UTY9dtOJbDtKI7makUj5lpzpliQVJuRgg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-16%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279380833" },
                 { name: "17주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfNzkg/MDAxNzc3ODYxMDA0ODM5.AR9-VOZIM_kRnRNKU8S6jmFvumiIo3oOBj_-Rt8JotAg.NnKFXATt2U8t3LYtG8M00e4He4wTgvnOFKC3e7psuhAg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-17%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279381532" },
@@ -998,7 +1041,7 @@ export default function App() {
       </section>
 
       {/* Membership Info */}
-      <section className="py-10 md:py-16 bg-white" id="후원안내">
+      <section className="py-10 md:py-16 bg-[#f5f2e9]" id="후원안내">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
             {[
@@ -1082,8 +1125,21 @@ export default function App() {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
-            {[
+        <div className="w-full overflow-hidden py-10 relative">
+          <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+          
+          <motion.div 
+            className="flex gap-8 px-4"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              duration: 100, // Very slow speed
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            style={{ width: "fit-content" }}
+          >
+            {[...[
               { name: '울산광역시', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMTcy/MDAxNzc4NzY2MDY1Mjgx.MipEu2N_gV6qAAr9OUFbvfuqNdzBMli1u6MavlzVS9og.sWhFcJHYira2kz7VpgsuZZSmmeUGRH_X_FQQXf3hEPgg.GIF/logo02.gif?type=w3840', link: 'https://www.ulsan.go.kr' },
               { name: '울산경찰서', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfNDIg/MDAxNzc4NzY2MTMyMzM3.4dieaZtR4lpN_oHvRxunqC_ZJeXReRd3XZnkszi6ouog.NXCx7I4QLAJvCywmxwxuJ6sf-eXIU6x4vYL7N_lFUHcg.PNG/Capture_2026_0514_214738.png?type=w3840', link: 'https://www.uspolice.go.kr' },
               { name: '울산국학운동시민연합', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMjY5/MDAxNzc4NzY2MTcwMzcw.dyl6X23v9pi0YoPw1_0VJRAfPORa0mBwJRrpsU_0eYQg.BOxYdUuJt7o3umhFwG8LIoREuyzbjIj9hh4iPRwysKsg.PNG/Capture_2026_0514_215108.png?type=w3840', link: 'http://www.kookhak.org' },
@@ -1093,31 +1149,36 @@ export default function App() {
               { name: '글로벌사이버대학교', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfOTIg/MDAxNzc4NzY2NzY2MzY1.xYTd8Is5PxWAqttuFGSb85W_zPEaQQjGfcOud_4l8eYg.9STTtklFUREYe5mnRzrlC52KHgDM6dU_E8-9zR5b3nkg.PNG/%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%82%AC%EC%9D%B4%EB%B2%84%EB%8C%80%ED%95%99%EA%B5%901.png?type=w3840', link: 'https://www.global.ac.kr' },
               { name: '사회서비스센터', image: 'https://postfiles.pstatic.net/MjAyNjA1MTdfMzAg/MDAxNzc5MDA0MjI2NzA5.qcMQdGt1XQI_OQJNsdFvRKSFgTDPO_lrgAmj6BcxMSIg.qWzMp8qbh09QYF83Y-effnL6e8TK3-hxdeZ215Mo3Ecg.JPEG/%EC%A0%9C%EB%AA%A9%EC%9D%84_%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._(2).jpg?type=w3840', link: 'https://www.ussag.or.kr/main.html' },
               { name: '브레인트레이닝센터', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfNzgg/MDAxNzc4NzY2ODk0MTYy.6zMrNEpXxlENnl1gWese0djV5Sy1NOGmHD9aDOxpyv8g.v_XwumnoRbxhw3ZGJcD-2OFN8sgbHO-kvdmn5aOIbMkg.PNG/Gemini_Generated_Image_iy276miy276miy27.png?type=w3840', link: 'https://www.braintraining.co.kr' },
-              { name: '국학학술원', image: 'https://postfiles.pstatic.net/MjAyNjA1MTdfMjU1/MDAxNzc5MDA1MDA3MDgx.Dtzo0p5o-9Nkhphe0zFaNoVlIoGlV6s4J6uiuauSsFgg.c1DMm8C37m3CYEzVRyyAHbspKI0f1lYZ2azffp-Y20og.JPEG/%EC%A0%9C%EB%AA%A9%EC%9D%84_%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._(2).jpg?type=w3840', link: 'http://www.kookhak.org' }
-            ].map((partner, i) => (
-              <motion.a 
-                key={partner.name}
+              { name: '국학학술원', image: 'https://postfiles.pstatic.net/MjAyNjA1MTdfMjU1/MDAxNzc5MDA1MDA3MDgx.Dtzo0p5o-9Nkhphe0zFaNoVlIoGlV6s4J6uiuauSsFgg.c1DMm8C37m3CYEzVRyyAHbspKI0f1lYZ2azffp-Y20og.JPEG/%EC%82%AC%EC%9D%B4%EB%B2%84%EA%B5%AD%ED%95%99%ED%95%99%EC%88%A0%EC%9B%90.jpg?type=w3840', link: 'http://www.kookhak.org' }
+            ], ...[
+              { name: '울산광역시', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMTcy/MDAxNzc4NzY2MDY1Mjgx.MipEu2N_gV6qAAr9OUFbvfuqNdzBMli1u6MavlzVS9og.sWhFcJHYira2kz7VpgsuZZSmmeUGRH_X_FQQXf3hEPgg.GIF/logo02.gif?type=w3840', link: 'https://www.ulsan.go.kr' },
+              { name: '울산경찰서', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfNDIg/MDAxNzc4NzY2MTMyMzM3.4dieaZtR4lpN_oHvRxunqC_ZJeXReRd3XZnkszi6ouog.NXCx7I4QLAJvCywmxwxuJ6sf-eXIU6x4vYL7N_lFUHcg.PNG/Capture_2026_0514_214738.png?type=w3840', link: 'https://www.uspolice.go.kr' },
+              { name: '울산국학운동시민연합', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMjY5/MDAxNzc4NzY2MTcwMzcw.dyl6X23v9pi0YoPw1_0VJRAfPORa0mBwJRrpsU_0eYQg.BOxYdUuJt7o3umhFwG8LIoREuyzbjIj9hh4iPRwysKsg.PNG/Capture_2026_0514_215108.png?type=w3840', link: 'http://www.kookhak.org' },
+              { name: '울산국학기공협회', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMTAw/MDAxNzc4NzY2MjI4ODky.XcXTxQhz2O8lLrBITcIp7qi2lHRDUqHeLQZLPUxtexQg.1F1Gt_1YuWAIeqQYt5B46elicwxUkWGSrVY3pc84Z1Yg.PNG/Gemini_Generated_Image_l8zm56l8zm56l8zm.png?type=w3840', link: 'http://sports.kookhak.org' },
+              { name: '지구시민연합', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMjI3/MDAxNzc4NzY2NDYzMTYz.1FNckQdBVZCEqoDgkQWZ62POnhn5xXOu7ia0Ow2lim0g.gOUUqYzweaJtPyYeOFrg4Qa6bPFjFhTzWmJaS77VDyUg.PNG/Gemini_Generated_Image_tnc6lttnc6lttnc6.png?type=w3840', link: 'http://earthcitizen.or.kr' },
+              { name: '국학원 본원', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfMTkz/MDAxNzc4NzY4OTIzMzcz.tghc8bZ09YpcO5WAAhhGoijvOr7aipUXRRosu5Wpdo4g.Z6X2tiNx2qoreu8cVzVssVMa3DgrYBIAFP6y-Z_mlNQg.PNG/Gemini_Generated_Image_dy8tgady8tgady8t.png?type=w773', link: 'http://www.kookhakwon.org' },
+              { name: '글로벌사이버대학교', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfOTIg/MDAxNzc4NzY2NzY2MzY1.xYTd8Is5PxWAqttuFGSb85W_zPEaQQjGfcOud_4l8eYg.9STTtklFUREYe5mnRzrlC52KHgDM6dU_E8-9zR5b3nkg.PNG/%EA%B8%80%EB%A1%9C%EB%B2%8C%EC%82%AC%EC%9D%B4%EB%B2%84%EB%8C%80%ED%95%99%EA%B5%901.png?type=w3840', link: 'https://www.global.ac.kr' },
+              { name: '사회서비스센터', image: 'https://postfiles.pstatic.net/MjAyNjA1MTdfMzAg/MDAxNzc5MDA0MjI2NzA5.qcMQdGt1XQI_OQJNsdFvRKSFgTDPO_lrgAmj6BcxMSIg.qWzMp8qbh09QYF83Y-effnL6e8TK3-hxdeZ215Mo3Ecg.JPEG/%EC%A0%9C%EB%AA%A9%EC%9D%84_%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._(2).jpg?type=w3840', link: 'https://www.ussag.or.kr/main.html' },
+              { name: '브레인트레이닝센터', image: 'https://postfiles.pstatic.net/MjAyNjA1MTRfNzgg/MDAxNzc4NzY2ODk0MTYy.6zMrNEpXxlENnl1gWese0djV5Sy1NOGmHD9aDOxpyv8g.v_XwumnoRbxhw3ZGJcD-2OFN8sgbHO-kvdmn5aOIbMkg.PNG/Gemini_Generated_Image_iy276miy276miy27.png?type=w3840', link: 'https://www.braintraining.co.kr' },
+              { name: '국학학술원', image: 'https://postfiles.pstatic.net/MjAyNjA1MTdfMjU1/MDAxNzc5MDA1MDA3MDgx.Dtzo0p5o-9Nkhphe0zFaNoVlIoGlV6s4J6uiuauSsFgg.c1DMm8C37m3CYEzVRyyAHbspKI0f1lYZ2azffp-Y20og.JPEG/%EC%82%AC%EC%9D%B4%EB%B2%84%EA%B5%AD%ED%95%99%ED%95%99%EC%88%A0%EC%9B%90.jpg?type=w3840', link: 'http://www.kookhak.org' }
+            ]].map((partner, i) => (
+              <a 
+                key={i}
                 href={partner.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative aspect-square overflow-hidden rounded-3xl bg-white border border-stone-100 shadow-md hover:shadow-xl transition-all duration-500 block"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
+                className="group relative w-[180px] h-[180px] shrink-0 overflow-hidden rounded-3xl bg-white border border-stone-100 shadow-md hover:shadow-xl transition-all duration-500 block"
               >
                 <img 
                   src={partner.image} 
                   alt={partner.name}
-                  className="absolute inset-0 w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-contain p-4 transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ArrowRight className="w-4 h-4 text-white" />
-                </div>
-              </motion.a>
+              </a>
             ))}
-          </div>
+          </motion.div>
+        </div>
         </div>
       </section>
 
