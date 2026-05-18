@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "ContactRequest": {
+      "title": "Contact Request",
+      "description": "A request submitted via the contact or program form",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The name of the requester" },
+        "phone": { "type": "string", "description": "The contact phone number" },
+        "email": { "type": "string", "description": "The email address" },
+        "message": { "type": "string", "description": "The inquiry message" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Submission timestamp" },
+        "source": { "type": "string", "description": "Where the request originated (e.g., 'contact', 'program')" }
+      },
+      "required": ["name", "phone", "createdAt"]
+    }
+  },
+  "firestore": {
+    "contactRequests": {
+      "schema": "ContactRequest",
+      "description": "Collection of submissions from visitors"
+    }
+  }
+}
