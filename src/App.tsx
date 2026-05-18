@@ -911,7 +911,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
             <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px]">후원감사카드</h2>
-            <p className="font-sans text-stone-500 mt-2 text-base md:text-lg text-balance">울산국학원과 고귀한 뜻을 함께해주시는 소중한 분들께 마음을 전합니다.</p>
+            <p className="font-sans text-stone-500 mt-2 text-[20px] text-balance">울산국학원과 고귀한 뜻을 함께해주시는 소중한 분들께 마음을 전합니다.</p>
           </div>
           
           <div className="w-full overflow-hidden py-10 relative">
@@ -1070,7 +1070,7 @@ export default function App() {
                 transition={{ duration: 0.6, delay: i * 0.1 }}
               >
                 <h3 className="font-serif text-2xl mb-4 text-[#1A237E] group-hover:text-primary transition-colors font-bold">{item.title}</h3>
-                <p className="font-sans text-stone-800 text-base leading-relaxed font-medium">{item.text}</p>
+                <p className="font-sans text-stone-800 text-[18px] leading-relaxed font-medium">{item.text}</p>
               </motion.div>
             ))}
           </div>
@@ -1078,7 +1078,7 @@ export default function App() {
           <div className="bg-white rounded-[40px] p-10 md:p-16 shadow-lg border border-stone-100">
             <div className="flex flex-col items-center text-center mb-16 gap-4">
               <h3 className="font-serif text-3xl md:text-4xl text-[#1A237E] font-bold">회원 혜택</h3>
-              <p className="font-sans text-stone-700 max-w-lg font-medium">
+              <p className="font-sans text-stone-700 font-medium text-[20px]">
                 후원 회원님의 건강, 행복, 사랑의 혜택이 커질수 있도록 노력하겠습니다.
               </p>
             </div>
