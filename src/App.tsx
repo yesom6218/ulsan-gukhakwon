@@ -781,42 +781,6 @@ export default function App() {
                 image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjU2/MDAxNzc5MDAyMzEzOTIz.kQ-wfTQ4H9gUwLAY2KFe_rcuAFWmN0B_J_ShseahtOEg.uGJKyz0KbBzqhNpjq-YWjTNhEsnalFridy3IOtnXqKMg.PNG/Capture_2026_0517_161351.png?type=w3840",
                 objectFit: "contain" as const
               }
-            ], ...[
-              {
-                icon: BookOpen,
-                title: "2026년 울산경찰서 사랑의 교실",
-                info: "일정: 매월 1회 또는 2회 | 장소: 울산국학원 교육장",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjcy/MDAxNzc4ODU3NzU0MTY1.Se5OKDCAueoqd208KkBjyAlnIedw1pPRdBnMiionxXYg.RbItIlm5D60xdkFM5VN9hw0Qe4KhiisGKg2HzvndNNcg.JPEG/%EC%82%AC%EB%9E%91%EC%9D%98%EA%B5%90%EC%8B%A4.jpg?type=w773",
-                objectFit: "contain" as const
-              },
-              {
-                icon: Wind,
-                title: "국학회원을 위한 국학힐링명상 체험반",
-                info: "일정: 매주 수요일 오전 10시 | 장소: 온라인 또는 교육장",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTVfMjkz/MDAxNzc4ODUzMzE4NzMw.rpfDFntAXq3a_yMnonmqPqTesX9ET1NNJ0cmWfljYXYg.tcABA0cTRPlfhGmbEnU1fJ1PQF2Ayi8QkS7dghBIIL8g.JPEG/Gemini_Generated_Image_hqtx3shqtx3shqtx1.jpg?type=w3840",
-                objectFit: "contain" as const
-              },
-              {
-                icon: Briefcase,
-                title: "민족혼 및 뿌리 정신 교육",
-                info: "일정: 수시 운영 | 장소: 협약 기업 및 단체",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfNjEg/MDAxNzc5MDAxMDYwOTY1.2ltbHCD9vMZACqm0kgybxUzN0JP49h_re_QMPeWBAKwg.EwGUR9B-CL_goV_N25ZLz8OL5I5iQ6EcXRc1bFuCCCwg.PNG/KakaoTalk_20260506_101350971.png?type=w3840",
-                objectFit: "contain" as const
-              },
-              {
-                icon: Heart,
-                title: "역사문화와 K스피릿 강좌",
-                info: "일정: 수시 운영 | 장소: 단체 및 기업, 울산국학원",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjA0/MDAxNzc4OTk5ODM1MTY1.7egSk3R_dyWlfx1ZmPNCG1gywM-ZTYm_3Wve4OALv74g.cga6Kjus6k5NTdvj0SQbViYJP4u48Vau3F2t5mNVdXIg.PNG/ChatGPT_Image_2026%EB%85%84_5%EC%9B%94_17%EC%9D%BC_%EC%98%A4%ED%9B%84_03_36_03.png?type=w3840",
-                objectFit: "contain" as const
-              },
-              {
-                icon: GraduationCap,
-                title: "청소년 인성교육 및 K리더스캠프",
-                info: "일정: 수시 운영 | 장소: 울산 관내 학교 및 교육장",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjU2/MDAxNzc5MDAyMzEzOTIz.kQ-wfTQ4H9gUwLAY2KFe_rcuAFWmN0B_J_ShseahtOEg.uGJKyz0KbBzqhNpjq-YWjTNhEsnalFridy3IOtnXqKMg.PNG/Capture_2026_0517_161351.png?type=w3840",
-                objectFit: "contain" as const
-              }
             ]].map((program, i) => (
               <div 
                 key={i}
@@ -855,9 +819,20 @@ export default function App() {
             <h2 className="font-serif text-primary text-[32px] md:text-[40px]">강사진 소개</h2>
             <p className="font-sans text-on-surface-variant mt-2 text-lg md:text-xl">울산국학원의 전문 강사진입니다.</p>
           </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
+        </div>
+
+        <div className="w-full overflow-hidden py-10">
+          <motion.div 
+            className="flex gap-12 px-4"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              duration: 150, // Very slow speed
+              ease: "linear",
+              repeat: Infinity,
+            }}
+            style={{ width: "fit-content" }}
+          >
+            {[...[
               { 
                 name: "강** 원장", 
                 role: "울산국학원 원장 / 인성교육 전문가", 
@@ -878,17 +853,33 @@ export default function App() {
                 role: "힐링명상교육/브레인코치", 
                 image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
               }
-            ].map((instructor, i) => (
-              <motion.div 
-                key={instructor.name}
-                className="group flex flex-col items-center cursor-pointer"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                whileHover={{ y: -12 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
+            ], ...[
+              { 
+                name: "강** 원장", 
+                role: "울산국학원 원장 / 인성교육 전문가", 
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+              },
+              { 
+                name: "이** 수석강사", 
+                role: "국학기공 마스터 / 명상 지도자", 
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840" 
+              },
+              { 
+                name: "박** 책임연구원", 
+                role: "전통문화 학술 연구 / 청소년 교육", 
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+              },
+              { 
+                name: "최** 전문교수", 
+                role: "힐링명상교육/브레인코치", 
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+              }
+            ]].map((instructor, i) => (
+              <div 
+                key={i}
+                className="group flex flex-col items-center w-[280px] shrink-0"
               >
-                <div className="relative aspect-[3/4] w-4/5 mx-auto overflow-hidden rounded-2xl mb-6 shadow-md transition-all duration-500 group-hover:shadow-2xl ring-1 ring-stone-100 group-hover:ring-primary/20">
+                <div className="relative aspect-[3/4] w-full mx-auto overflow-hidden rounded-2xl mb-6 shadow-md transition-all duration-500 group-hover:shadow-2xl ring-1 ring-stone-100 group-hover:ring-primary/20">
                   <motion.img 
                     src={instructor.image} 
                     alt={instructor.name} 
@@ -900,9 +891,9 @@ export default function App() {
                 </div>
                 <h3 className="font-serif text-xl mb-1 group-hover:text-primary transition-colors duration-300">{instructor.name}</h3>
                 <p className="font-sans text-xs text-secondary font-bold uppercase tracking-wider text-center group-hover:text-primary/70 transition-colors duration-300">{instructor.role}</p>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
