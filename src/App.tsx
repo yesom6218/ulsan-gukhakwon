@@ -394,7 +394,7 @@ export default function App() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div className="space-y-4" {...fadeInUp}>
             <span className="text-secondary font-sans font-bold uppercase tracking-widest text-xs">단체소개</span>
-            <h2 className="font-sans text-[30px] text-on-surface font-bold">울산국학원 소개</h2>
+            <h2 className="font-sans text-[40px] text-on-surface font-bold">울산국학원 소개</h2>
             <p className="font-sans text-on-surface-variant leading-relaxed text-lg md:text-xl font-medium">
               울산국학원은 한민족의 고유한 정신인 홍익인간 정신을 계승하고, 현대적으로 재해석하여 지역 사회에 전파하는 문화 교육 기관입니다. 
               우리는 잃어버린 민족의 혼을 되찾고, 모두가 행복한 세상을 만드는 인성 회복 운동에 앞장섭니다.
@@ -1292,7 +1292,7 @@ export default function App() {
       <footer className="bg-[#F5F2E8] border-t border-stone-200 mt-auto">
         <div className="max-w-7xl mx-auto px-6 py-12 md:py-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div className="space-y-4">
-            <div className="text-[20px] font-sans font-bold text-stone-500">단체명: 울산국학원</div>
+            <div className="text-[20px] font-sans font-bold text-stone-500">상호: 울산국학원</div>
             <div className="text-[16px] font-sans font-medium text-stone-500">고유번호증: 610-82-67406</div>
             <p className="text-stone-500 text-sm font-sans">
               © 2005 울산국학원. Institute for Traditional Korean Culture Studies.
