@@ -428,7 +428,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <div className="text-center">
             <h2 className="font-serif text-primary text-[32px] md:text-[40px]">주요 활동</h2>
-            <p className="font-sans text-on-surface-variant mt-2 text-lg">울산국학원의 다채로운 활동을 슬라이드로 확인해보세요.</p>
+            <p className="font-sans text-on-surface-variant mt-2 text-lg">울산국학원의 다채로운 활동을 확인해보세요.</p>
           </div>
         </div>
 
