@@ -1301,20 +1301,39 @@ export default function App() {
           </div>
           
           <div className="flex flex-wrap items-center gap-x-8 gap-y-4 font-sans font-bold text-stone-500">
-            <div className="flex gap-6">
+            <div className="flex gap-8 md:gap-12">
               {[
-                { name: '블로그', href: 'https://blog.naver.com/ulkook120' },
-                { name: '유튜브', href: 'https://youtube.com/@tv-pn4tp?si=Rbs0GdgmdUGcB_cv' },
-                { name: '인스타', href: '#' }
+                { 
+                  name: '블로그', 
+                  href: 'https://blog.naver.com/ulkook120',
+                  icon: 'https://postfiles.pstatic.net/MjAyNjA1MTlfNzIg/MDAxNzc5MTYzMDg1MjI1.u7tt3-HW3qptjlXWXor92KZdTWIyr2aqbBtwsyWHif0g.oUaL7DfkfTWdZvSg-fdMoPMfJ93SZa34zgU4poQCxG4g.JPEG/%EB%B8%94%EB%A1%9C%EA%B7%B8.jpg?type=w3840'
+                },
+                { 
+                  name: '유튜브', 
+                  href: 'https://youtube.com/@tv-pn4tp?si=Rbs0GdgmdUGcB_cv',
+                  icon: 'https://postfiles.pstatic.net/MjAyNjA1MTlfMjY3/MDAxNzc5MTYzMDkwOTc5.FOc2UTAaL9oii6nQErWRr_DfFQT-EBUgarj54h6BupUg.-xgC-5-ysCXT8CCim1AxbyNsHiFPbvEiaabcl9_KaDAg.JPEG/%EC%9C%A0%ED%8A%9C%EB%B8%8C.jpg?type=w3840'
+                },
+                { 
+                  name: '인스타', 
+                  href: '#',
+                  icon: 'https://postfiles.pstatic.net/MjAyNjA1MTlfODcg/MDAxNzc5MTYzMDk0NTY2.AWA2AillTLJy9kwqdcgLVw0OrVEh6LhIO3t-CAjwuqQg.KYYzdzWWce0NV-CIy5DuZsCFb852ZMDFQuXjRO65eyog.JPEG/%EC%9D%B8%EC%8A%A4%ED%83%80.jpg?type=w3840'
+                }
               ].map(link => (
                 <a 
                   key={link.name} 
                   href={link.href} 
                   target={link.href !== '#' ? "_blank" : undefined}
                   rel={link.href !== '#' ? "noopener noreferrer" : undefined}
-                  className="hover:text-primary transition-colors text-[20px]"
+                  className="group flex flex-col items-center transition-all duration-300"
                 >
-                  {link.name}
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl overflow-hidden shadow-sm group-hover:shadow-md group-hover:-translate-y-1 transition-all duration-300 border border-stone-100 bg-white">
+                    <img 
+                      src={link.icon} 
+                      alt={link.name} 
+                      className="w-full h-full object-contain"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
                 </a>
               ))}
             </div>
