@@ -134,7 +134,7 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ activity, index }) => {
         </div>
       </div>
       <div className="p-6 pt-4">
-        <h3 className="font-serif mb-2 text-2xl text-primary leading-tight font-bold">{activity.title}</h3>
+        <h3 className="font-sans mb-2 text-2xl text-primary leading-tight font-bold">{activity.title}</h3>
         <p className="font-sans text-stone-800 text-sm md:text-base leading-relaxed font-medium">{activity.desc}</p>
       </div>
     </motion.div>
@@ -278,7 +278,7 @@ export default function App() {
                 src="https://postfiles.pstatic.net/MjAyNjA1MDZfMTUz/MDAxNzc4MDY0MjM2MzI2.sPH8cDTeHKDJVhL7S9Lzk57TPyfMAAbyPgE_jn9xESwg.Q6Tt74BNvfpq8fXbf_3Phi_keE6v_T_fXXUMNLFeLIgg.PNG/%EB%A1%9C%EA%B3%A0-%EC%82%BC%EC%A1%B1%EC%98%A4-removebg-preview.png?type=w3840"
                 referrerPolicy="no-referrer"
               />
-              <span className="font-serif tracking-tight">울산국학원</span>
+              <span className="font-sans font-bold tracking-tight">울산국학원</span>
             </a>
           </div>
           
@@ -379,7 +379,7 @@ export default function App() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <p className="text-on-surface leading-[1.4] text-right text-[24px] md:text-[28px] font-serif">
+            <p className="text-on-surface leading-[1.4] text-right text-[24px] md:text-[28px] font-sans font-medium">
               전통을 품고, 오늘을 가꾸며,<br/>
               미래를 열어갑니다.
             </p>
@@ -390,7 +390,7 @@ export default function App() {
       </header>
 
       {/* About Section */}
-      <section className="py-10 md:py-14 px-6 max-w-7xl mx-auto" id="소개">
+      <section className="py-10 md:py-14 px-6 max-w-7xl mx-auto font-sans" id="소개">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div className="space-y-4" {...fadeInUp}>
             <span className="text-secondary font-sans font-bold uppercase tracking-widest text-xs">ABOUT US</span>
@@ -415,7 +415,7 @@ export default function App() {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
               >
                 <feature.icon className="text-secondary w-14 h-14 mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="font-serif mb-2 text-2xl">{feature.title}</h3>
+                <h3 className="font-sans mb-2 text-2xl font-bold">{feature.title}</h3>
                 <p className="text-sm font-sans text-on-surface-variant">{feature.desc}</p>
               </motion.div>
             ))}
@@ -427,7 +427,7 @@ export default function App() {
       <section className="bg-[#f5f2e9] py-10 md:py-14 overflow-hidden" id="주요활동">
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <div className="text-center">
-            <h2 className="font-serif text-primary text-[32px] md:text-[40px]">주요 활동</h2>
+            <h2 className="font-sans text-primary text-[32px] md:text-[40px] font-bold">주요 활동</h2>
             <p className="font-sans text-on-surface-variant mt-2 text-lg">울산국학원의 다채로운 활동을 확인해보세요.</p>
           </div>
         </div>
@@ -479,7 +479,7 @@ export default function App() {
       <section className="bg-white py-10 md:py-14 overflow-hidden" id="갤러리">
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <div className="text-center">
-            <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px] font-bold">활동 갤러리</h2>
+            <h2 className="font-sans text-[#1A237E] text-[32px] md:text-[40px] font-bold">활동 갤러리</h2>
             <p className="font-sans text-stone-700 mt-2 text-lg md:text-xl font-medium">울산국학원의 생생한 활동 현장을 전해드립니다.</p>
           </div>
         </div>
@@ -522,8 +522,8 @@ export default function App() {
               },
               { 
                 url: "https://postfiles.pstatic.net/MjAyNjA1MTdfNDUg/MDAxNzc4OTk5MTcxNzk0.Az1HCxOG1q6j48Rhz-gofvWYTe0QgptriFU9QFyH-c0g.lVX-fAbqyZ6LE5ilyMTUlXTiWByCxjNGVD0l4KwfOy8g.PNG/ChatGPT_Image_2026%EB%85%84_5%EC%9B%94_17%EC%9D%BC_%EC%98%A4%ED%9B%84_03_25_33.png?type=w3840",
-                title: "국학기공 수련",
-                description: "몸과 마음의 조화를 통해 건강한 에너지를 채우는 수련 과정입니다.",
+                title: "국학기공 체험",
+                description: "몸과 마음의 조화를 통해 건강한 에너지를 채우는 체험 과정입니다.",
                 objectFit: "contain" as const
               },
               { 
@@ -559,8 +559,8 @@ export default function App() {
               },
               { 
                 url: "https://postfiles.pstatic.net/MjAyNjA1MTdfNDUg/MDAxNzc4OTk5MTcxNzk0.Az1HCxOG1q6j48Rhz-gofvWYTe0QgptriFU9QFyH-c0g.lVX-fAbqyZ6LE5ilyMTUlXTiWByCxjNGVD0l4KwfOy8g.PNG/ChatGPT_Image_2026%EB%85%84_5%EC%9B%94_17%EC%9D%BC_%EC%98%A4%ED%9B%84_03_25_33.png?type=w3840",
-                title: "국학기공 수련",
-                description: "몸과 마음의 조화를 통해 건강한 에너지를 채우는 수련 과정입니다.",
+                title: "국학기공 체험",
+                description: "몸과 마음의 조화를 통해 건강한 에너지를 채우는 체험 과정입니다.",
                 objectFit: "contain" as const
               },
               { 
@@ -601,7 +601,7 @@ export default function App() {
                   )}
                 </div>
                 <div className="p-8 pt-6">
-                  <h3 className="font-serif text-2xl mb-3 text-[#1A237E] leading-tight font-bold truncate">{item.title}</h3>
+                  <h3 className="font-sans text-2xl mb-3 text-[#1A237E] leading-tight font-bold truncate">{item.title}</h3>
                   <p className="font-sans text-stone-800 text-sm leading-relaxed font-medium line-clamp-2">
                     {item.description}
                   </p>
@@ -616,7 +616,7 @@ export default function App() {
       <section className="py-10 md:py-14 bg-[#006F74] overflow-hidden" id="활동후기">
         <div className="max-w-7xl mx-auto px-6 mb-8">
           <div className="text-center">
-            <h2 className="font-serif text-[32px] md:text-[40px] text-white">활동 후기</h2>
+            <h2 className="font-sans text-[32px] md:text-[40px] text-white font-bold">활동 후기</h2>
             <p className="font-sans mt-2 text-lg md:text-xl text-[#FDFCF0]">울산국학원과 함께한 소중한 변화의 기록입니다.</p>
           </div>
         </div>
@@ -729,7 +729,7 @@ export default function App() {
       <section className="py-10 md:py-14 bg-stone-50" id="프로그램">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px] font-bold">프로그램</h2>
+            <h2 className="font-sans text-[#1A237E] text-[32px] md:text-[40px] font-bold">프로그램</h2>
             <p className="font-sans text-stone-700 mt-2 text-base md:text-lg font-medium">울산국학원에서 운영하는 다양한 교육 프로그램을 소개합니다.</p>
           </div>
           
@@ -798,7 +798,7 @@ export default function App() {
                   </div>
                 </div>
                 <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="font-serif text-base text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold truncate">{program.title}</h3>
+                  <h3 className="font-sans text-base text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold truncate">{program.title}</h3>
                   <div className="mt-auto pt-4 border-t border-stone-100">
                     <p className="font-sans text-stone-800 text-xs leading-relaxed whitespace-pre-line font-medium line-clamp-2">
                       {program.info.split(' | ').join('\n')}
@@ -816,7 +816,7 @@ export default function App() {
       <section className="py-10 md:py-14 bg-white" id="강사진">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="font-serif text-primary text-[32px] md:text-[40px]">강사진 소개</h2>
+            <h2 className="font-sans text-primary text-[32px] md:text-[40px] font-bold">강사진 소개</h2>
             <p className="font-sans text-on-surface-variant mt-2 text-lg md:text-xl">울산국학원의 전문 강사진입니다.</p>
           </div>
         </div>
@@ -889,7 +889,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <h3 className="font-serif text-xl mb-1 group-hover:text-primary transition-colors duration-300">{instructor.name}</h3>
+                <h3 className="font-sans text-xl mb-1 group-hover:text-primary transition-colors duration-300 font-bold">{instructor.name}</h3>
                 <p className="font-sans text-xs text-secondary font-bold uppercase tracking-wider text-center group-hover:text-primary/70 transition-colors duration-300">{instructor.role}</p>
               </div>
             ))}
@@ -901,7 +901,7 @@ export default function App() {
       <section className="py-10 md:py-14 bg-[#f5f2e9]" id="후원">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px]">후원감사카드</h2>
+            <h2 className="font-sans text-[#1A237E] text-[32px] md:text-[40px] font-bold">후원감사카드</h2>
             <p className="font-sans text-stone-500 mt-2 text-[20px] text-balance">울산국학원과 고귀한 뜻을 함께해주시는 소중한 분들께 마음을 전합니다.</p>
           </div>
           
@@ -974,7 +974,7 @@ export default function App() {
                         referrerPolicy="no-referrer"
                       />
                     </div>
-                    <h3 className="font-serif text-lg text-[#1A237E] group-hover:text-secondary transition-colors duration-300 text-center truncate w-full">{card.name}</h3>
+                    <h3 className="font-sans text-lg text-[#1A237E] group-hover:text-secondary transition-colors duration-300 text-center truncate w-full font-bold">{card.name}</h3>
                   </div>
                 );
 
@@ -1010,7 +1010,7 @@ export default function App() {
         </div>
         <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
           <motion.h2 
-            className="font-serif text-white mb-6 text-[32px] md:text-[48px] font-bold"
+            className="font-sans text-white mb-6 text-[32px] md:text-[48px] font-bold"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -1060,7 +1060,7 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
               >
-                <h3 className="font-serif text-2xl mb-4 text-[#1A237E] group-hover:text-primary transition-colors font-bold">{item.title}</h3>
+                <h3 className="font-sans text-2xl mb-4 text-[#1A237E] group-hover:text-primary transition-colors font-bold">{item.title}</h3>
                 <p className="font-sans text-stone-800 text-[18px] leading-relaxed font-medium">{item.text}</p>
               </motion.div>
             ))}
@@ -1068,7 +1068,7 @@ export default function App() {
 
           <div className="bg-white rounded-[40px] p-10 md:p-16 shadow-lg border border-stone-100">
             <div className="flex flex-col items-center text-center mb-16 gap-4">
-              <h3 className="font-serif text-3xl md:text-4xl text-[#1A237E] font-bold">회원 혜택</h3>
+              <h3 className="font-sans text-3xl md:text-4xl text-[#1A237E] font-bold">회원 혜택</h3>
               <p className="font-sans text-stone-700 font-medium text-[20px]">
                 후원 회원님의 건강, 행복, 사랑의 혜택이 커질수 있도록 노력하겠습니다.
               </p>
@@ -1110,7 +1110,7 @@ export default function App() {
             >
               OUR PARTNERS
             </motion.span>
-            <h2 className="font-serif text-[#1A237E] text-[32px] md:text-[40px] font-bold">협력 단체</h2>
+            <h2 className="font-sans text-[#1A237E] text-[32px] md:text-[40px] font-bold">협력 단체</h2>
             <p className="font-sans text-stone-700 mt-4 text-base md:text-lg max-w-4xl md:max-w-none mx-auto leading-relaxed md:whitespace-nowrap font-medium">
               울산국학원과 함께 홍익의 가치를 실천하고 지역사회의 밝은 미래를 열어가는 든든한 파트너들입니다.
             </p>
@@ -1178,7 +1178,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div className="space-y-8" {...fadeInUp}>
             <div>
-              <h2 className="font-serif text-[32px] md:text-[40px] font-bold">문의하기</h2>
+              <h2 className="font-sans text-[32px] md:text-[40px] font-bold">문의하기</h2>
               <p className="font-sans text-stone-800 mt-3 text-base md:text-lg font-medium">프로그램 참여 및 제휴 문의를 남겨주세요.</p>
             </div>
             <form className="space-y-6" onSubmit={(e) => handleContactSubmit(e)}>
@@ -1246,7 +1246,7 @@ export default function App() {
 
           <motion.div className="space-y-8" {...fadeInUp} transition={{ delay: 0.2 }}>
             <div>
-              <h2 className="font-serif text-[32px] md:text-[40px]">오시는 길</h2>
+              <h2 className="font-sans text-[32px] md:text-[40px] font-bold">오시는 길</h2>
               <p className="font-sans text-on-surface-variant mt-3">방문을 환영합니다.</p>
             </div>
             <a 
@@ -1362,7 +1362,7 @@ export default function App() {
                     <ShieldCheck className="w-6 h-6" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-serif text-[#1A237E]">관리자 패널</h2>
+                    <h2 className="text-2xl font-sans text-[#1A237E] font-bold">관리자 패널</h2>
                     <p className="text-sm font-sans text-stone-500">사이트의 데이터를 효율적으로 관리합니다.</p>
                   </div>
                 </div>
