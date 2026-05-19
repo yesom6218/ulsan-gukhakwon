@@ -451,7 +451,7 @@ export default function App() {
                 ]
               },
               { 
-                title: "문화 행사 주관", 
+                title: "문화 행사", 
                 desc: "지역 사회의 화합을 위한 다채로운 행사를 개최합니다.",
                 images: [
                   "https://postfiles.pstatic.net/MjAyNjA1MTVfNjcg/MDAxNzc4ODUyODYxNjM5.eV5xsCJJ6dQnGbDGdlb8Qq3Q40V2jx1lEECCF083O9Yg.e09knTWp14ATvkByNBYXXmUwvLBNl-jJPghDfJo3kwMg.JPEG/IMG_2546.JPG?type=w3840",
