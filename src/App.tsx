@@ -876,7 +876,7 @@ export default function App() {
             ]].map((instructor, i) => (
               <div 
                 key={i}
-                className="group flex flex-col items-center w-[280px] shrink-0"
+                className="group flex flex-col items-center w-[220px] shrink-0"
               >
                 <div className="relative aspect-[3/4] w-full mx-auto overflow-hidden rounded-2xl mb-6 shadow-md transition-all duration-500 group-hover:shadow-2xl ring-1 ring-stone-100 group-hover:ring-primary/20">
                   <motion.img 
