@@ -393,7 +393,7 @@ export default function App() {
       <section className="py-10 md:py-14 px-6 max-w-7xl mx-auto font-sans" id="소개">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div className="space-y-4" {...fadeInUp}>
-            <h2 className="font-sans text-[28px] sm:text-[32px] md:text-[40px] text-on-surface font-bold leading-tight">단체 소개</h2>
+            <h2 className="font-sans text-[28px] sm:text-[32px] md:text-[40px] text-on-surface font-bold leading-tight">소개</h2>
             <p className="font-sans text-on-surface-variant leading-relaxed text-lg md:text-xl font-medium">
               울산국학원은 한민족의 고유한 정신인 홍익인간 정신을 계승하고, 현대적으로 재해석하여 지역 사회에 전파하는 문화 교육 기관입니다. 
               우리는 잃어버린 민족의 혼을 되찾고, 모두가 행복한 세상을 만드는 인성 회복 운동에 앞장섭니다.
@@ -438,8 +438,8 @@ export default function App() {
                 title: "인성 교육 프로그램", 
                 desc: "청소년과 성인을 대상으로 인성 교육 강좌를 운영합니다.",
                 images: [
-                  "https://postfiles.pstatic.net/MjAyNjA1MTVfNTEg/MDAxNzc4ODQ3MTE2NjIy.3CMsc4bk0FRAWFI9hreEzv6_KSw1WSJkCbFJwNYy4iUg.d6YsQVcPS5O6ym2Os8Xin2XEJAG5mL9-JihGL2Dm8JEg.JPEG/KakaoTalk_20221226_112111207_10.jpg?type=w3840",
-                  "https://postfiles.pstatic.net/MjAyNjA1MTVfMTkw/MDAxNzc4ODQ3MTU4ODM0.4GWEOmt5lI-fpcRYudXCO_IOgpVreq6U22cSLr8j1mUg.rOVlex3-hekwA8tcki2QxAdmZCd82z7pVsE8BgYSLoUg.JPEG/KakaoTalk_20230519_184229518_08.jpg?type=w3840"
+                  "https://postfiles.pstatic.net/MjAyNjA1MTVfMjk4/MDAxNzc4ODQ3MTE3MDA4.IaoYSbvfHM3mE64JJoAJFm3cR6Ta0hw0klqykz5beecg.uB09QKx4ZsPu5e0OjBPuXPrFgVJRQPQNSpYzAMf5MKsg.PNG/Gemini_Generated_Image_8mqvlf8mqvlf8mqv.png?type=w3840",
+                  "https://postfiles.pstatic.net/MjAyNjA1MTVfNTEg/MDAxNzc4ODQ3MTE2NjIy.3CMsc4bk0FRAWFI9hreEzv6_KSw1WSJkCbFJwNYy4iUg.d6YsQVcPS5O6ym2Os8Xin2XEJAG5mL9-JihGL2Dm8JEg.JPEG/KakaoTalk_20221226_112111207_10.jpg?type=w3840"
                 ]
               },
               { 
