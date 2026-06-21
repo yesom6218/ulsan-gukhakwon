@@ -870,63 +870,63 @@ export default function App() {
             {[...[
               { 
                 name: "이수연 국학원장", 
-                role: "울산국학원 원장 / 인성교육 전문가", 
+                role: "브레인 마스터/ 인성교육 전문가", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTY4/MDAxNzgxNTg3NjUxMzY3.f_Rw3Y5eNPAJ5ChuoaTmK0C3zx7guDMVzj11zTGkn-Ug.rmXp0Fa5AIfyEqC--3C4sxol-dBcD-3har8xO_jCvY4g.JPEG/ChatGPT_Image-%EC%9D%B4%EC%88%98%EC%97%B0.jpg?type=w3840"
               },
               { 
                 name: "임호장 부원장", 
-                role: "국학기공 마스터 / 명상 지도자", 
+                role: "국학기공 교육원장 / 임상심리사", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjI1/MDAxNzgxNTg2NTA4MTYy.RJZnbOs2fY0CATSrM9yB_jR6-ELs-R_xjcPz-aVpplwg.YfHUG39vrYc0Y30XEWYq4qmlkTqQFT9QpiPESdtY0fgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%9E%84%ED%98%B8%EC%9E%A5_(1).png?type=w3840" 
               },
               { 
                 name: "문종수 부원장", 
-                role: "전통문화 학술 연구 / 청소년 교육", 
+                role: "전통문화 학술 연구 / 문화예술교육사", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjQy/MDAxNzgxNTk1MjY4NDk0.D4k8QTHkeTLefVm1L3RxOVrHQA4mihBgq24FPDzy9Xkg.2gMY1jO_UxF0Fmau3wsWCH5EXKF_nIXQHqGFgWfncKog.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_33_36.png?type=w3840"
               },
               { 
                 name: "손정욱 남구원장", 
-                role: "힐링명상교육/브레인코치", 
+                role: "힐링명상교육/웃음명상", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfNzgg/MDAxNzgxNTk1NjkwNDcz.Y9TeM2cthIN2BfWsXCsG5Y0ENYRxSetj_1mRno594twg.U5NusSmxqay-zHuL8bm9XlQFzpN4rbdZcLg9i8Ebpg4g.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_41_05.png?type=w3840"
               },
               { 
                 name: "박미영 이사", 
-                role: "전통 명상 / 호흡 지도 강사", 
+                role: "전통 명상 / 브레인코치", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTYy/MDAxNzgxNTg4ODY5ODQz.RfQXdjTCY1Djmon3fsISjzTsesnAXntG2QisISeFphgg.4TLdvB6FqVUx9g0xzNTb6pRlgl01cgAFWGjA7NCcNeQg.PNG/Gemini_Generated_Image_%EB%B0%95%EB%AF%B8%EC%98%81.png?type=w3840"
               },
               { 
                 name: "김채연 사무처장", 
-                role: "뇌교육 / 청소년 상담 전문가", 
+                role: "국학전문위원 / 브레인트레이너", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjUg/MDAxNzgxNTg2NzIxNjA1.Hb7RUACOnKGfD1GMzEz1ghlm0A_pfFJtniKVY7JLpDYg.-DKLHxT9oJ2KF8LgC7IhXmBu3eZVEdKU2bHw0baahCog.JPEG/ChatGPT_Image-%EA%B9%80%EC%B1%84%EC%97%B0.jpg?type=w3840"
               }
             ], ...[
               { 
                 name: "이수연 국학원장", 
-                role: "울산국학원 원장 / 인성교육 전문가", 
+                role: "브레인 마스터/ 인성교육 전문가", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTY4/MDAxNzgxNTg3NjUxMzY3.f_Rw3Y5eNPAJ5ChuoaTmK0C3zx7guDMVzj11zTGkn-Ug.rmXp0Fa5AIfyEqC--3C4sxol-dBcD-3har8xO_jCvY4g.JPEG/ChatGPT_Image-%EC%9D%B4%EC%88%98%EC%97%B0.jpg?type=w3840"
               },
               { 
                 name: "임호장 부원장", 
-                role: "국학기공 마스터 / 명상 지도자", 
+                role: "국학기공 교육원장 / 임상심리사", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjI1/MDAxNzgxNTg2NTA4MTYy.RJZnbOs2fY0CATSrM9yB_jR6-ELs-R_xjcPz-aVpplwg.YfHUG39vrYc0Y30XEWYq4qmlkTqQFT9QpiPESdtY0fgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%9E%84%ED%98%B8%EC%9E%A5_(1).png?type=w3840" 
               },
               { 
                 name: "문종수 부원장", 
-                role: "전통문화 학술 연구 / 청소년 교육", 
+                role: "전통문화 학술 연구 / 문화예술교육사", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjQy/MDAxNzgxNTk1MjY4NDk0.D4k8QTHkeTLefVm1L3RxOVrHQA4mihBgq24FPDzy9Xkg.2gMY1jO_UxF0Fmau3wsWCH5EXKF_nIXQHqGFgWfncKog.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_33_36.png?type=w3840"
               },
               { 
                 name: "손정욱 남구원장", 
-                role: "힐링명상교육/브레인코치", 
+                role: "힐링명상교육/웃음명상", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfNzgg/MDAxNzgxNTk1NjkwNDcz.Y9TeM2cthIN2BfWsXCsG5Y0ENYRxSetj_1mRno594twg.U5NusSmxqay-zHuL8bm9XlQFzpN4rbdZcLg9i8Ebpg4g.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_41_05.png?type=w3840"
               },
               { 
                 name: "박미영 이사", 
-                role: "전통 명상 / 호흡 지도 강사", 
+                role: "전통 명상 / 브레인코치", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTYy/MDAxNzgxNTg4ODY5ODQz.RfQXdjTCY1Djmon3fsISjzTsesnAXntG2QisISeFphgg.4TLdvB6FqVUx9g0xzNTb6pRlgl01cgAFWGjA7NCcNeQg.PNG/Gemini_Generated_Image_%EB%B0%95%EB%AF%B8%EC%98%81.png?type=w3840"
               },
               { 
                 name: "김채연 사무처장",
-                role: "뇌교육 / 청소년 상담 전문가", 
+                role: "국학전문위원 / 브레인트레이너", 
                 image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjUg/MDAxNzgxNTg2NzIxNjA1.Hb7RUACOnKGfD1GMzEz1ghlm0A_pfFJtniKVY7JLpDYg.-DKLHxT9oJ2KF8LgC7IhXmBu3eZVEdKU2bHw0baahCog.JPEG/ChatGPT_Image-%EA%B9%80%EC%B1%84%EC%97%B0.jpg?type=w3840"
               }
             ]].map((instructor, i) => (
@@ -1081,7 +1081,7 @@ export default function App() {
             rel="noopener noreferrer"
             className="px-16 py-6 bg-[#FDFCF0] text-primary font-sans font-bold rounded-full hover:scale-105 transition-transform text-xl md:text-2xl shadow-xl inline-block"
           >
-            후원 안내
+            후원하기
           </a>
         </div>
       </section>
@@ -1093,12 +1093,12 @@ export default function App() {
             {[
               { 
                 icon: Calendar, 
-                title: "CMS 정기 후원", 
+                title: "정기 후원", 
                 text: "매월 정기적인 나눔으로 울산국학원의 뿌리를 튼튼하게 지탱해주시는 가장 소중한 동반자입니다."
               },
               { 
                 icon: Heart, 
-                title: "일시 후원", 
+                title: "일시후원", 
                 text: "기쁜 일이나 의미 있는 날, 따뜻한 마음을 모아 자유롭게 참여하는 소중한 응원입니다."
               },
               { 
@@ -1123,17 +1123,17 @@ export default function App() {
 
           <div className="bg-white rounded-[40px] p-10 md:p-16 shadow-lg border border-stone-100">
             <div className="flex flex-col items-center text-center mb-16 gap-4">
-              <h3 className="font-sans text-3xl md:text-4xl text-[#1A237E] font-bold">회원 혜택</h3>
+              <h3 className="font-sans text-3xl md:text-4xl text-[#1A237E] font-bold">회원혜택</h3>
               <p className="font-sans text-stone-700 font-medium text-[20px]">
                 후원 회원님의 건강, 행복, 사랑의 혜택이 커질수 있도록 노력하겠습니다.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
               {[
-                { icon: Percent, text: "협력 단체 프로그램\n수강료 할인 혜택", color: "#17717a" },
-                { icon: Activity, text: "년 2회 건강체크와 상담\n(브레인트레이닝센터)", color: "#FF3B30" },
-                { icon: Wind, text: "힐링명상체험\n(실시간 온라인)", color: "#4CAF50" },
-                { icon: Receipt, text: "기부금 영수증 발행\n세액 공제 혜택", color: "#1A237E" },
+                { icon: Percent, text: "협력 단체\n할인 혜택", color: "#17717a" },
+                { icon: Activity, text: "년 2회 건강체크\n(브레인트레이닝센터)", color: "#FF3B30" },
+                { icon: Wind, text: "힐링명상체험", color: "#4CAF50" },
+                { icon: Receipt, text: "기부금 영수증 발행", color: "#1A237E" },
               ].map((benefit, i) => (
                 <div key={i} className="flex flex-col items-center text-center group">
                   <div className="relative w-24 h-24 mb-6">
@@ -1327,7 +1327,7 @@ export default function App() {
             <div className="space-y-6">
               {[
                 { icon: MapPin, label: "주소", val: "울산광역시 남구 돋질로 76, 6층" },
-                { icon: Phone, label: "전화번호", val: "052-268-8065" },
+                { icon: Phone, label: "전화번호 / 팩스", val: "052-268-8065 / 052-265-8062" },
                 { icon: Mail, label: "이메일", val: "ulkook120@naver.com" }
               ].map(info => (
                 <div key={info.label} className="flex items-start gap-4">
