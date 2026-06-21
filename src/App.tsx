@@ -393,7 +393,7 @@ export default function App() {
       <section className="py-10 md:py-14 px-6 max-w-7xl mx-auto font-sans" id="소개">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div className="space-y-4" {...fadeInUp}>
-            <h2 className="font-sans text-[40px] text-on-surface font-bold">울산국학원 소개</h2>
+            <h2 className="font-sans text-[28px] sm:text-[32px] md:text-[40px] text-on-surface font-bold leading-tight">울산국학원 소개</h2>
             <p className="font-sans text-on-surface-variant leading-relaxed text-lg md:text-xl font-medium">
               울산국학원은 한민족의 고유한 정신인 홍익인간 정신을 계승하고, 현대적으로 재해석하여 지역 사회에 전파하는 문화 교육 기관입니다. 
               우리는 잃어버린 민족의 혼을 되찾고, 모두가 행복한 세상을 만드는 인성 회복 운동에 앞장섭니다.
@@ -726,13 +726,13 @@ export default function App() {
 
       {/* Program Section */}
       <section className="py-10 md:py-14 bg-stone-50" id="프로그램">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-[2640px] mx-auto px-6">
           <div className="text-center mb-8">
             <h2 className="font-sans text-[#1A237E] text-[32px] md:text-[40px] font-bold">프로그램</h2>
             <p className="font-sans text-stone-700 mt-2 text-base md:text-lg font-medium">울산국학원에서 운영하는 다양한 교육 프로그램을 소개합니다.</p>
           </div>
           
-        <div className="w-full overflow-hidden py-10 relative">
+        <div className="w-full max-w-[2640px] mx-auto overflow-hidden py-10 relative">
           
           <motion.div 
             className="flex gap-8 px-4"
@@ -745,6 +745,42 @@ export default function App() {
             style={{ width: "fit-content" }}
           >
             {[...[
+              {
+                icon: BookOpen,
+                title: "2026년 울산경찰서 사랑의 교실",
+                info: "일정: 매월 1회 또는 2회 | 장소: 울산국학원 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjcy/MDAxNzc4ODU3NzU0MTY1.Se5OKDCAueoqd208KkBjyAlnIedw1pPRdBnMiionxXYg.RbItIlm5D60xdkFM5VN9hw0Qe4KhiisGKg2HzvndNNcg.JPEG/%EC%82%AC%EB%9E%91%EC%9D%98%EA%B5%90%EC%8B%A4.jpg?type=w773",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Wind,
+                title: "국학회원을 위한 국학힐링명상 체험반",
+                info: "일정: 매주 수요일 오전 10시 | 장소: 온라인 또는 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTVfMjkz/MDAxNzc4ODUzMzE4NzMw.rpfDFntAXq3a_yMnonmqPqTesX9ET1NNJ0cmWfljYXYg.tcABA0cTRPlfhGmbEnU1fJ1PQF2Ayi8QkS7dghBIIL8g.JPEG/Gemini_Generated_Image_hqtx3shqtx3shqtx1.jpg?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Briefcase,
+                title: "민족혼 및 뿌리 정신 교육",
+                info: "일정: 수시 운영 | 장소: 협약 기업 및 단체",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfNjEg/MDAxNzc5MDAxMDYwOTY1.2ltbHCD9vMZACqm0kgybxUzN0JP49h_re_QMPeWBAKwg.EwGUR9B-CL_goV_N25ZLz8OL5I5iQ6EcXRc1bFuCCCwg.PNG/KakaoTalk_20260506_101350971.png?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: Heart,
+                title: "역사문화와 K스피릿 강좌",
+                info: "일정: 수시 운영 | 장소: 단체 및 기업, 울산국학원",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjA0/MDAxNzc4OTk5ODM1MTY1.7egSk3R_dyWlfx1ZmPNCG1gywM-ZTYm_3Wve4OALv74g.cga6Kjus6k5NTdvj0SQbViYJP4u48Vau3F2t5mNVdXIg.PNG/ChatGPT_Image_2026%EB%85%84_5%EC%9B%94_17%EC%9D%BC_%EC%98%A4%ED%9B%84_03_36_03.png?type=w3840",
+                objectFit: "contain" as const
+              },
+              {
+                icon: GraduationCap,
+                title: "청소년 인성교육 및 K리더스캠프",
+                info: "일정: 수시 운영 | 장소: 울산 관내 학교 및 교육장",
+                image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjU2/MDAxNzc5MDAyMzEzOTIz.kQ-wfTQ4H9gUwLAY2KFe_rcuAFWmN0B_J_ShseahtOEg.uGJKyz0KbBzqhNpjq-YWjTNhEsnalFridy3IOtnXqKMg.PNG/Capture_2026_0517_161351.png?type=w3840",
+                objectFit: "contain" as const
+              }
+            ], ...[
               {
                 icon: BookOpen,
                 title: "2026년 울산경찰서 사랑의 교실",
@@ -797,10 +833,10 @@ export default function App() {
                   </div>
                 </div>
                 <div className="p-6 flex-grow flex flex-col">
-                  <h3 className="font-sans text-base text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold truncate">{program.title}</h3>
+                  <h3 className="font-sans text-lg text-[#1A237E] mb-3 leading-tight group-hover:text-primary transition-colors font-bold truncate">{program.title}</h3>
                   <div className="mt-auto pt-4 border-t border-stone-100">
-                    <p className="font-sans text-stone-800 text-xs leading-relaxed whitespace-pre-line font-medium line-clamp-2">
-                      {program.info.split(' | ').join('\n')}
+                    <p className="font-sans text-stone-800 text-sm leading-relaxed whitespace-pre-line font-medium line-clamp-2">
+                       {program.info.split(' | ').join('\n')}
                     </p>
                   </div>
                 </div>
@@ -820,58 +856,78 @@ export default function App() {
           </div>
         </div>
 
-        <div className="w-full overflow-hidden py-10">
+        <div className="w-full max-w-[1500px] mx-auto overflow-hidden py-10">
           <motion.div 
-            className="flex gap-12 px-4"
-            animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              duration: 150, // Very slow speed
-              ease: "linear",
-              repeat: Infinity,
-            }}
-            style={{ width: "fit-content" }}
+             className="flex gap-12 px-4"
+             animate={{ x: ["0%", "-50%"] }}
+             transition={{
+               duration: 150, // Very slow speed
+               ease: "linear",
+               repeat: Infinity,
+             }}
+             style={{ width: "fit-content" }}
           >
             {[...[
               { 
-                name: "강** 원장", 
+                name: "이수연 국학원장", 
                 role: "울산국학원 원장 / 인성교육 전문가", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTY4/MDAxNzgxNTg3NjUxMzY3.f_Rw3Y5eNPAJ5ChuoaTmK0C3zx7guDMVzj11zTGkn-Ug.rmXp0Fa5AIfyEqC--3C4sxol-dBcD-3har8xO_jCvY4g.JPEG/ChatGPT_Image-%EC%9D%B4%EC%88%98%EC%97%B0.jpg?type=w3840"
               },
               { 
-                name: "이** 수석강사", 
+                name: "임호장 부원장", 
                 role: "국학기공 마스터 / 명상 지도자", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840" 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjI1/MDAxNzgxNTg2NTA4MTYy.RJZnbOs2fY0CATSrM9yB_jR6-ELs-R_xjcPz-aVpplwg.YfHUG39vrYc0Y30XEWYq4qmlkTqQFT9QpiPESdtY0fgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%9E%84%ED%98%B8%EC%9E%A5_(1).png?type=w3840" 
               },
               { 
-                name: "박** 책임연구원", 
+                name: "문종수 부원장", 
                 role: "전통문화 학술 연구 / 청소년 교육", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjQy/MDAxNzgxNTk1MjY4NDk0.D4k8QTHkeTLefVm1L3RxOVrHQA4mihBgq24FPDzy9Xkg.2gMY1jO_UxF0Fmau3wsWCH5EXKF_nIXQHqGFgWfncKog.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_33_36.png?type=w3840"
               },
               { 
-                name: "최** 전문교수", 
+                name: "손정욱 남구원장", 
                 role: "힐링명상교육/브레인코치", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfNzgg/MDAxNzgxNTk1NjkwNDcz.Y9TeM2cthIN2BfWsXCsG5Y0ENYRxSetj_1mRno594twg.U5NusSmxqay-zHuL8bm9XlQFzpN4rbdZcLg9i8Ebpg4g.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_41_05.png?type=w3840"
+              },
+              { 
+                name: "박미영 이사", 
+                role: "전통 명상 / 호흡 지도 강사", 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTYy/MDAxNzgxNTg4ODY5ODQz.RfQXdjTCY1Djmon3fsISjzTsesnAXntG2QisISeFphgg.4TLdvB6FqVUx9g0xzNTb6pRlgl01cgAFWGjA7NCcNeQg.PNG/Gemini_Generated_Image_%EB%B0%95%EB%AF%B8%EC%98%81.png?type=w3840"
+              },
+              { 
+                name: "김채연 사무처장", 
+                role: "뇌교육 / 청소년 상담 전문가", 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjUg/MDAxNzgxNTg2NzIxNjA1.Hb7RUACOnKGfD1GMzEz1ghlm0A_pfFJtniKVY7JLpDYg.-DKLHxT9oJ2KF8LgC7IhXmBu3eZVEdKU2bHw0baahCog.JPEG/ChatGPT_Image-%EA%B9%80%EC%B1%84%EC%97%B0.jpg?type=w3840"
               }
             ], ...[
               { 
-                name: "강** 원장", 
+                name: "이수연 국학원장", 
                 role: "울산국학원 원장 / 인성교육 전문가", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTY4/MDAxNzgxNTg3NjUxMzY3.f_Rw3Y5eNPAJ5ChuoaTmK0C3zx7guDMVzj11zTGkn-Ug.rmXp0Fa5AIfyEqC--3C4sxol-dBcD-3har8xO_jCvY4g.JPEG/ChatGPT_Image-%EC%9D%B4%EC%88%98%EC%97%B0.jpg?type=w3840"
               },
               { 
-                name: "이** 수석강사", 
+                name: "임호장 부원장", 
                 role: "국학기공 마스터 / 명상 지도자", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840" 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjI1/MDAxNzgxNTg2NTA4MTYy.RJZnbOs2fY0CATSrM9yB_jR6-ELs-R_xjcPz-aVpplwg.YfHUG39vrYc0Y30XEWYq4qmlkTqQFT9QpiPESdtY0fgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%9E%84%ED%98%B8%EC%9E%A5_(1).png?type=w3840" 
               },
               { 
-                name: "박** 책임연구원", 
+                name: "문종수 부원장", 
                 role: "전통문화 학술 연구 / 청소년 교육", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjQy/MDAxNzgxNTk1MjY4NDk0.D4k8QTHkeTLefVm1L3RxOVrHQA4mihBgq24FPDzy9Xkg.2gMY1jO_UxF0Fmau3wsWCH5EXKF_nIXQHqGFgWfncKog.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_33_36.png?type=w3840"
               },
               { 
-                name: "최** 전문교수", 
+                name: "손정욱 남구원장", 
                 role: "힐링명상교육/브레인코치", 
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjQ0/MDAxNzc4ODU3NTE3MTM4.2Gf8mUG20qurAmB9liU1-AjzpIIj8towVbXH_aTFUc4g.sHcABdsgo3sa8dbOCuiCVOuo7goIIdBC-0c8zUkbIAcg.PNG/Gemini_Generated_Image_mi4b9emi4b9emi4b.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfNzgg/MDAxNzgxNTk1NjkwNDcz.Y9TeM2cthIN2BfWsXCsG5Y0ENYRxSetj_1mRno594twg.U5NusSmxqay-zHuL8bm9XlQFzpN4rbdZcLg9i8Ebpg4g.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_16%EC%9D%BC_%EC%98%A4%ED%9B%84_04_41_05.png?type=w3840"
+              },
+              { 
+                name: "박미영 이사", 
+                role: "전통 명상 / 호흡 지도 강사", 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMTYy/MDAxNzgxNTg4ODY5ODQz.RfQXdjTCY1Djmon3fsISjzTsesnAXntG2QisISeFphgg.4TLdvB6FqVUx9g0xzNTb6pRlgl01cgAFWGjA7NCcNeQg.PNG/Gemini_Generated_Image_%EB%B0%95%EB%AF%B8%EC%98%81.png?type=w3840"
+              },
+              { 
+                name: "김채연 사무처장",
+                role: "뇌교육 / 청소년 상담 전문가", 
+                image: "https://postfiles.pstatic.net/MjAyNjA2MTZfMjUg/MDAxNzgxNTg2NzIxNjA1.Hb7RUACOnKGfD1GMzEz1ghlm0A_pfFJtniKVY7JLpDYg.-DKLHxT9oJ2KF8LgC7IhXmBu3eZVEdKU2bHw0baahCog.JPEG/ChatGPT_Image-%EA%B9%80%EC%B1%84%EC%97%B0.jpg?type=w3840"
               }
             ]].map((instructor, i) => (
               <div 
@@ -889,7 +945,7 @@ export default function App() {
                   />
                 </div>
                 <h3 className="font-sans text-xl mb-1 group-hover:text-primary transition-colors duration-300 font-bold">{instructor.name}</h3>
-                <p className="font-sans text-xs text-secondary font-bold uppercase tracking-wider text-center group-hover:text-primary/70 transition-colors duration-300">{instructor.role}</p>
+                <p className="font-sans text-sm text-secondary font-bold uppercase tracking-wider text-center group-hover:text-primary/70 transition-colors duration-300">{instructor.role}</p>
               </div>
             ))}
           </motion.div>
@@ -919,9 +975,9 @@ export default function App() {
               style={{ width: "fit-content" }}
             >
               {[...[
-                { name: "1주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMjA4/MDAxNzc3ODA1MTUwODI5.06cxf7wJT0HnpIQuO2PrNsNU2hFukBWAvYLdVA-i71cg.aCc6P5LHTHe3CKPahl7EHu5I0qOapmlcr4vnG-x1J9og.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-1%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279372790" },
-                { name: "2주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMjE5/MDAxNzc3ODA1MTUyNDgx.iRiyJSUDN6ZC3PletlU5Gpw94e2WbuOzqqMNJHquh7Eg.Am2LpIqmFSFMTDICR6oZzEChogzb1IjSNv24wWTUN94g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-2%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279364592" },
-                { name: "3주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMTYw/MDAxNzc3ODA1MTUyMzA4.fb6jFHGsbCMjkCo7MrvJMLzeeXc6sfjPDu2lbZF0D9cg.re83MvfCyOkpgppnYlMJQEtSbJkPFE34Iybms56bKngg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-3%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279367140" },
+                { name: "1주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfNiAg/MDAxNzc4MjQ1OTQwMTcz.wHLJyWVHJGobHKGaeqzMv_bSdArbVGMYGCuQf_2ESXwg.9SvDWV_wOjuz8lywWUr4J1AsnRoMiu0Ecni_lcKn6Tkg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-1%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279372790" },
+                { name: "2주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMjg1/MDAxNzc4MjQ2MjgwNDgy.dnk66mrXvKfHIhTtGqC3RPZ4bwKO4doROq3yDFP5ogMg.1aWUHwxKBSs8BUDkn_DQkDgvSoc6lgXwHcdeVReYNf8g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-2%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279364592" },
+                { name: "3주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMTMw/MDAxNzc4MjQ2NDk5NTA1.A1FePSWN0ISOPQPsO4T7TZBaxFbnlHFrYcIbpcWFGBwg.yY5AIVdMLvKO2sdobORhW80Kog93DjL_VIRWBCGmMaEg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-3%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279367140" },
                 { name: "4주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjIy/MDAxNzc3ODYxMDAzNzE1.y7xbj2gZ40578UmU-Y4DTG8h3wYBu9ca5prqDO2j2kkg.-E5i5ni_aX_jhoM0c2pPQNNlE1hgY-mVksPC2ywT1nYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-4%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279369158" },
                 { name: "5주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjA2/MDAxNzc3ODYxMDA0OTYy.jUKZ7ghQVXpyoOWZzyG0zIOicRCmHVcZyofv7_GbYhog.H7sgz__enry2GEPm_vap3gZK4PJTi8y3WJXCwiEczdYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-5%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279371111" },
                 { name: "6주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTI5/MDAxNzc3ODYxMDAzMjI1.pk0zJG9F7fzC4hHYdbNvblJ3vtRcJ-7ZeawFeIWRizUg.IMY9pUnwDTtgkEEwZtU5UVQYhAflkscnuPDS44j-g7kg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-6%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279371890" },
@@ -941,9 +997,9 @@ export default function App() {
                 { name: "20주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjMz/MDAxNzc3ODYxMDAxOTYx.0Fqro4hsLIbtm1OSFjI9Tz5N8BfY8yXPEJLuSFehN4og.c_En9CsAhWZy0q-ZoUpThCkLyWRHPGFDrDr4m-N1xlYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-20%EC%A3%BC%EB%85%84.png?type=w3840" },
                 { name: "고액후원 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MTdfMjg1/MDAxNzc5MDA5OTQwOTIw.irYMqM4w9SEoBrbcRKuLRGPAHME531vt4dhufFrP-iEg.GVag7tChUiBd1GcithQi34DFQ2N2yTcJPUppqqWDLj4g.PNG/Gemini_Generated_Image_qnfqqtqnfqqtqnfq.png?type=w773" }
               ], ...[
-                { name: "1주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMjA4/MDAxNzc3ODA1MTUwODI5.06cxf7wJT0HnpIQuO2PrNsNU2hFukBWAvYLdVA-i71cg.aCc6P5LHTHe3CKPahl7EHu5I0qOapmlcr4vnG-x1J9og.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-1%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279372790" },
-                { name: "2주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMjE5/MDAxNzc3ODA1MTUyNDgx.iRiyJSUDN6ZC3PletlU5Gpw94e2WbuOzqqMNJHquh7Eg.Am2LpIqmFSFMTDICR6oZzEChogzb1IjSNv24wWTUN94g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-2%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279364592" },
-                { name: "3주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDNfMTYw/MDAxNzc3ODA1MTUyMzA4.fb6jFHGsbCMjkCo7MrvJMLzeeXc6sfjPDu2lbZF0D9cg.re83MvfCyOkpgppnYlMJQEtSbJkPFE34Iybms56bKngg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-3%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279367140" },
+                { name: "1주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfNiAg/MDAxNzc4MjQ1OTQwMTcz.wHLJyWVHJGobHKGaeqzMv_bSdArbVGMYGCuQf_2ESXwg.9SvDWV_wOjuz8lywWUr4J1AsnRoMiu0Ecni_lcKn6Tkg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-1%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279372790" },
+                { name: "2주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMjg1/MDAxNzc4MjQ2MjgwNDgy.dnk66mrXvKfHIhTtGqC3RPZ4bwKO4doROq3yDFP5ogMg.1aWUHwxKBSs8BUDkn_DQkDgvSoc6lgXwHcdeVReYNf8g.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-2%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279364592" },
+                { name: "3주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDhfMTMw/MDAxNzc4MjQ2NDk5NTA1.A1FePSWN0ISOPQPsO4T7TZBaxFbnlHFrYcIbpcWFGBwg.yY5AIVdMLvKO2sdobORhW80Kog93DjL_VIRWBCGmMaEg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-3%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279367140" },
                 { name: "4주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjIy/MDAxNzc3ODYxMDAzNzE1.y7xbj2gZ40578UmU-Y4DTG8h3wYBu9ca5prqDO2j2kkg.-E5i5ni_aX_jhoM0c2pPQNNlE1hgY-mVksPC2ywT1nYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-4%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279369158" },
                 { name: "5주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMjA2/MDAxNzc3ODYxMDA0OTYy.jUKZ7ghQVXpyoOWZzyG0zIOicRCmHVcZyofv7_GbYhog.H7sgz__enry2GEPm_vap3gZK4PJTi8y3WJXCwiEczdYg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-5%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279371111" },
                 { name: "6주년 감사카드", image: "https://postfiles.pstatic.net/MjAyNjA1MDRfMTI5/MDAxNzc3ODYxMDAzMjI1.pk0zJG9F7fzC4hHYdbNvblJ3vtRcJ-7ZeawFeIWRizUg.IMY9pUnwDTtgkEEwZtU5UVQYhAflkscnuPDS44j-g7kg.PNG/%ED%9B%84%EC%9B%90%EA%B0%90%EC%82%AC%EC%B9%B4%EB%93%9C-6%EC%A3%BC%EB%85%84.png?type=w3840", link: "https://blog.naver.com/ulkook120/224279371890" },
