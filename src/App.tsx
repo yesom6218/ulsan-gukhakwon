@@ -1093,7 +1093,7 @@ export default function App() {
             {[
               { 
                 icon: Calendar, 
-                title: "정기 후원", 
+                title: "정기후원", 
                 text: "매월 정기적인 나눔으로 울산국학원의 뿌리를 튼튼하게 지탱해주시는 가장 소중한 동반자입니다."
               },
               { 

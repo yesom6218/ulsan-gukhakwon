@@ -2,5 +2,7 @@
   "name": "Ulsan Gukhakwon",
   "description": "The official website for Ulsan Gukhakwon, dedicated to preserving traditional Korean spirit and culture.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
