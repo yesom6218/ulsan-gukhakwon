@@ -871,7 +871,7 @@ export default function App() {
               { 
                 name: "이수연 국학원장", 
                 role: "브레인 마스터/ 인성교육 전문가", 
-                image: "https://postfiles.pstatic.net/MjAyNjA2MjNfMTI4/MDAxNzgyMjAxNDc3NDEz.GGhclF5QCOCbzeT3QjQIJTfCJc7vP7Kj-Zjw8M_ilS0g.6cK3qjJThQst-LOHBCk1auY9rcSIYJtJknG1pzEOscgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_23%EC%9D%BC_%EC%98%A4%ED%9B%84_04_50_15.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MjRfMTYx/MDAxNzgyMjkwNzc0ODI5.t1phTU5IIUTZswu4LJ5lJybKBx_YoWaWLRFf6T_vFXsg.HIUGYLVX_hZ-fEbr7sEAL7vK_6TjUC-ZXG0scGifJPEg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_23%EC%9D%BC_%EC%98%A4%ED%9B%84_05_15_22.png?type=w3840"
               },
               { 
                 name: "임호장 부원장", 
@@ -902,7 +902,7 @@ export default function App() {
               { 
                 name: "이수연 국학원장", 
                 role: "브레인 마스터/ 인성교육 전문가", 
-                image: "https://postfiles.pstatic.net/MjAyNjA2MjNfMTI4/MDAxNzgyMjAxNDc3NDEz.GGhclF5QCOCbzeT3QjQIJTfCJc7vP7Kj-Zjw8M_ilS0g.6cK3qjJThQst-LOHBCk1auY9rcSIYJtJknG1pzEOscgg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_23%EC%9D%BC_%EC%98%A4%ED%9B%84_04_50_15.png?type=w3840"
+                image: "https://postfiles.pstatic.net/MjAyNjA2MjRfMTYx/MDAxNzgyMjkwNzc0ODI5.t1phTU5IIUTZswu4LJ5lJybKBx_YoWaWLRFf6T_vFXsg.HIUGYLVX_hZ-fEbr7sEAL7vK_6TjUC-ZXG0scGifJPEg.PNG/ChatGPT_Image_2026%EB%85%84_6%EC%9B%94_23%EC%9D%BC_%EC%98%A4%ED%9B%84_05_15_22.png?type=w3840"
               },
               { 
                 name: "임호장 부원장", 
