@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>울산국학원</title>
+    <link>https://www.ulkookhak.org</link>
+    <description>한민족의 고유한 정신인 홍익인간 정신을 계승하고 전파하는 울산국학원의 공식 웹사이트입니다.</description>
+    <language>ko</language>
+    <pubDate>Thu, 25 Jun 2026 00:00:00 +0900</pubDate>
+    <lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0900</lastBuildDate>
+    
+    <item>
+      <title>울산국학원 소개</title>
+      <link>https://www.ulkookhak.org/?section=about</link>
+      <description>울산국학원은 한민족의 고유한 정신인 홍익인간 정신을 계승하고, 현대적으로 재해석하여 지역 사회에 전파하는 문화 교육 기관입니다.</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>https://www.ulkookhak.org/?section=about</guid>
+    </item>
+    
+    <item>
+      <title>울산국학원 주요 교육 프로그램 및 전통 문화 체험</title>
+      <link>https://www.ulkookhak.org/?section=programs</link>
+      <description>인성교육, 전통 뇌교육, 지구시민 평화운동 등 모두가 행복한 세상을 만드는 다양한 교육 프로그램을 소개합니다.</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>https://www.ulkookhak.org/?section=programs</guid>
+    </item>
+    
+    <item>
+      <title>홍익나눔 및 정기 후원 안내</title>
+      <link>https://www.ulkookhak.org/?section=support</link>
+      <description>울산국학원의 학술 연구 및 교육 전파 활동을 후원해주세요. 따뜻한 나눔으로 더 행복한 사회를 함께 만들어갑니다.</description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0900</pubDate>
+      <guid>https://www.ulkookhak.org/?section=support</guid>
+    </item>
+  </channel>
+</rss>
