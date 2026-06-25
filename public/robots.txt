@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://ulkookhak.or.kr/sitemap.xml
