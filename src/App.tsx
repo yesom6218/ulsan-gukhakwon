@@ -358,7 +358,7 @@ export default function App() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-[#1A237E] leading-[1.1] text-[50px] font-bold w-fit lg:w-[750px] max-w-full">
+            <h1 className="text-[#1A237E] leading-[1.1] text-[40px] font-bold w-fit lg:w-[750px] max-w-full">
               대한민국의<br/>
               <span className="text-[#FF3B30]">뿌리정신과 문화</span>를 살리고<br/>
               미래 가치로 확장시키는<br/>
