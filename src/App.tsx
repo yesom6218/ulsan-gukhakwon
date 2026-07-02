@@ -749,7 +749,7 @@ export default function App() {
                 icon: BookOpen,
                 title: "2026년 울산경찰서 사랑의 교실",
                 info: "일정: 매월 1회 또는 2회 | 장소: 울산국학원 교육장",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjcy/MDAxNzc4ODU3NzU0MTY1.Se5OKDCAueoqd208KkBjyAlnIedw1pPRdBnMiionxXYg.RbItIlm5D60xdkFM5VN9hw0Qe4KhiisGKg2HzvndNNcg.JPEG/%EC%82%AC%EB%9E%91%EC%9D%98%EA%B5%90%EC%8B%A4.jpg?type=w773",
+                image: "https://postfiles.pstatic.net/MjAyNjA3MDJfMjg1/MDAxNzgyOTc0MzcxNzAw.oV5KfSF7pNUcoqeOZuCJIDq_EtaPABeWhhO6YqdKSFEg.r-qdgYDdxrAD_Ue0UxnAQgMomdg6vkcxRmwbdU3_ZQkg.PNG/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_2%EC%9D%BC_%EC%98%A4%ED%9B%84_03_30_35.png?type=w3840",
                 objectFit: "contain" as const
               },
               {
@@ -785,7 +785,7 @@ export default function App() {
                 icon: BookOpen,
                 title: "2026년 울산경찰서 사랑의 교실",
                 info: "일정: 매월 1회 또는 2회 | 장소: 울산국학원 교육장",
-                image: "https://postfiles.pstatic.net/MjAyNjA1MTZfMjcy/MDAxNzc4ODU3NzU0MTY1.Se5OKDCAueoqd208KkBjyAlnIedw1pPRdBnMiionxXYg.RbItIlm5D60xdkFM5VN9hw0Qe4KhiisGKg2HzvndNNcg.JPEG/%EC%82%AC%EB%9E%91%EC%9D%98%EA%B5%90%EC%8B%A4.jpg?type=w773",
+                image: "https://postfiles.pstatic.net/MjAyNjA3MDJfMjg1/MDAxNzgyOTc0MzcxNzAw.oV5KfSF7pNUcoqeOZuCJIDq_EtaPABeWhhO6YqdKSFEg.r-qdgYDdxrAD_Ue0UxnAQgMomdg6vkcxRmwbdU3_ZQkg.PNG/ChatGPT_Image_2026%EB%85%84_7%EC%9B%94_2%EC%9D%BC_%EC%98%A4%ED%9B%84_03_30_35.png?type=w3840",
                 objectFit: "contain" as const
               },
               {
